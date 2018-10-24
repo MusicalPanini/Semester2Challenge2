@@ -1,0 +1,46 @@
+﻿<Page x:Class="EDSLApp.CreateSeason"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:EDSLApp"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="800"
+      Title="CreateSeason" Background="White" Loaded="onload">
+
+    <Grid>
+        <Rectangle Fill="LightGreen" HorizontalAlignment="Left" Height="61" Stroke="Black" VerticalAlignment="Top" Width="800"/>
+        <Rectangle Fill="White" HorizontalAlignment="Left" Height="166" Stroke="Black" VerticalAlignment="Top" Width="800" Margin="0,61,0,0"/>
+        <Rectangle Fill="LightGreen" HorizontalAlignment="Left" Height="134" Stroke="Black" VerticalAlignment="Top" Width="153"/>
+        <Rectangle Fill="LightGreen" HorizontalAlignment="Left" Height="324" Stroke="Black" VerticalAlignment="Top" Width="153" Margin="0,126,0,0"/>
+        <Button Content="Seasons" HorizontalAlignment="Left" Margin="38,30,0,0" VerticalAlignment="Top" Width="74"/>
+        <Button Name="ResultsButton" Content="Results" HorizontalAlignment="Left" Margin="38,84,0,0" VerticalAlignment="Top" Width="75" Click="ResultsButton_Click"/>
+        <Button Content="Clubs" HorizontalAlignment="Left" Margin="38,162,0,0" VerticalAlignment="Top" Width="74"/>
+        <Button Content="Teams" HorizontalAlignment="Left" Margin="38,214,0,0" VerticalAlignment="Top" Width="75"/>
+        <Button Content="Players" HorizontalAlignment="Left" Margin="38,264,0,0" VerticalAlignment="Top" Width="74"/>
+        <Button Content="Reports" HorizontalAlignment="Left" Margin="38,316,0,0" VerticalAlignment="Top" Width="75"/>
+
+        <Label Content="Setup Season Draw" HorizontalContentAlignment="Center" FontSize="30" Margin="158,0,10,0" VerticalAlignment="Top" Width="632" Height="61"/>
+
+        <Label Content="Season Year" HorizontalAlignment="Left" Margin="253,126,0,0" VerticalAlignment="Top" Width="74" Height="30"/>
+        <TextBox Name="SeasonYear" HorizontalAlignment="Left" Height="23" Margin="332,126,0,0" VerticalAlignment="Top" Width="120"/>
+        <Label Content="Start Date" HorizontalAlignment="Left" Margin="266,162,0,0" VerticalAlignment="Top" Width="66" Height="30"/>
+        <!--<TextBox HorizontalAlignment="Left" Height="23" Margin="332,162,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>-->
+        <DatePicker Name="StartDate" HorizontalAlignment="Left" Height="23" Margin="332,162,0,0" VerticalAlignment="Top" Width="120" SelectedDateChanged="StartDate_DateChanged"/>
+        <Label Content="No. of Rounds" HorizontalAlignment="Left" Margin="242,197,0,0" VerticalAlignment="Top" Width="85" Height="30"/>
+        <TextBlock Name="NoRounds" HorizontalAlignment="Left" Height="23" Margin="332,197,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="52"/>
+        <Label Content="Division" HorizontalAlignment="Left" Margin="266,261,0,0" VerticalAlignment="Top" Width="61" Height="30"/>
+        <Button Content="Select Dates" HorizontalAlignment="Left" Margin="513,129,0,0" VerticalAlignment="Top" Width="75" Height="44"/>
+        <Button Content="View Dates" HorizontalAlignment="Left" Margin="625,129,0,0" VerticalAlignment="Top" Width="75" Height="44"/>
+        <Button Name="CreateSeasonButton" Content="Create Season" HorizontalAlignment="Left" Margin="513,178,0,0" VerticalAlignment="Top" Width="187" Height="44" Click="CreateSeason_Click"/>
+        <Button Name="CreateDraw" Content="Create Draw" HorizontalAlignment="Left" Margin="513,240,0,0" VerticalAlignment="Top" Width="75" Height="44" Click="CreateDraw_Click" IsEnabled="False"/>
+        <Button Name="ViewDraw" Content="View Draw" HorizontalAlignment="Left" Margin="625,240,0,0" VerticalAlignment="Top" Width="75" Height="44" Click="ViewDraw_Click" IsEnabled="False"/>
+        <ComboBox x:Name="DivisionSelectBox" HorizontalAlignment="Left" Height="23" Margin="332,261,0,0" VerticalAlignment="Top" Width="120" SelectionChanged="DivisionSelectBox_SelectionChanged" IsEnabled="False">
+            <ComboBoxItem Content="A"/>
+            <ComboBoxItem Content="B"/>
+            <ComboBoxItem Content="C"/>
+        </ComboBox>
+        <Label Content="Season" HorizontalAlignment="Left" Margin="266,233,0,0" VerticalAlignment="Top" Width="61" Height="30"/>
+        <ComboBox x:Name="SeasonSelectBox" HorizontalAlignment="Left" Height="23" Margin="332,233,0,0" VerticalAlignment="Top" Width="120" SelectionChanged="SesaonSelectBox_SelectionChanged"/>
+    </Grid>
+</Page>

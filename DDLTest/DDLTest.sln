@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.27428.2015
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DDLTest", "DDLTest\DDLTest.csproj", "{91E9A476-80F2-432E-8D13-564D11977150}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{91E9A476-80F2-432E-8D13-564D11977150}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{91E9A476-80F2-432E-8D13-564D11977150}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{91E9A476-80F2-432E-8D13-564D11977150}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{91E9A476-80F2-432E-8D13-564D11977150}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {9D8D3FD5-B1C9-4BCF-B1EE-926A146514EA}
+	EndGlobalSection
+EndGlobal

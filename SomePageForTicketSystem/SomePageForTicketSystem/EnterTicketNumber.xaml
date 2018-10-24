@@ -1,0 +1,41 @@
+﻿<Page x:Class="SomePageForTicketSystem.EnterTicketNumber"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:SomePageForTicketSystem"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="800"
+      Title="EnterTicketNumber"
+      Background="LightGray"
+      Height="450" Width="800">
+
+    <Grid>
+        <TextBlock FontSize="20" HorizontalAlignment="Left" Margin="271,167,0,0" TextWrapping="Wrap" Text="Enter New Ticket Number" VerticalAlignment="Top" Width="236"/>
+        <TextBox HorizontalAlignment="Left" Margin="311,240,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="157"/>
+        <Button Content="Next" HorizontalAlignment="Left" Margin="353,278,0,0" VerticalAlignment="Top" Width="75" Click="Next_Click"/>
+        <TextBox HorizontalAlignment="Left" Margin="311,199,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="157"/>
+        <TextBox HorizontalAlignment="Left" Margin="298,149,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="157"/>
+        <TextBlock FontSize="20" HorizontalAlignment="Left" Margin="495,298,0,0" TextWrapping="Wrap" Text="Enter New Ticket Number" VerticalAlignment="Top" Width="236"/>
+        <TextBox HorizontalAlignment="Left" Margin="535,371,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="157"/>
+        <Button Content="Next" HorizontalAlignment="Left" Margin="577,409,0,0" VerticalAlignment="Top" Width="75" Click="Next_Click"/>
+        <TextBox HorizontalAlignment="Left" Margin="535,330,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="157"/>
+        <TextBox HorizontalAlignment="Left" Margin="522,280,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="157"/>
+        <TextBlock FontSize="20" HorizontalAlignment="Left" Margin="42,63,0,0" TextWrapping="Wrap" Text="Enter New Ticket Number" VerticalAlignment="Top" Width="236"/>
+        <TextBox HorizontalAlignment="Left" Margin="82,136,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="157"/>
+        <Button Content="Next" HorizontalAlignment="Left" Margin="124,174,0,0" VerticalAlignment="Top" Width="75" Click="Next_Click"/>
+        <TextBox HorizontalAlignment="Left" Margin="82,95,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="157"/>
+        <TextBox HorizontalAlignment="Left" Margin="69,45,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="157"/>
+        <TextBlock FontSize="20" HorizontalAlignment="Left" Margin="535,81,0,0" TextWrapping="Wrap" Text="Enter New Ticket Number" VerticalAlignment="Top" Width="236"/>
+        <TextBox HorizontalAlignment="Left" Margin="575,154,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="157"/>
+        <Button Content="Next" HorizontalAlignment="Left" Margin="617,192,0,0" VerticalAlignment="Top" Width="75" Click="Next_Click"/>
+        <TextBox HorizontalAlignment="Left" Margin="575,113,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="157"/>
+        <TextBox HorizontalAlignment="Left" Margin="562,63,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="157"/>
+        <TextBlock FontSize="20" HorizontalAlignment="Left" Margin="75,280,0,0" TextWrapping="Wrap" Text="Enter New Ticket Number" VerticalAlignment="Top" Width="236"/>
+        <TextBox HorizontalAlignment="Left" Margin="115,352,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="157"/>
+        <Button Content="Next" HorizontalAlignment="Left" Margin="157,390,0,0" VerticalAlignment="Top" Width="75" Click="Next_Click"/>
+        <TextBox HorizontalAlignment="Left" Margin="115,312,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="157"/>
+        <TextBox HorizontalAlignment="Left" Margin="102,262,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="157"/>
+
+    </Grid>
+</Page>
