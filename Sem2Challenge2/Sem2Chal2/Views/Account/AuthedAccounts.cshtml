@@ -1,0 +1,53 @@
+﻿@model IEnumerable<Sem2Chal2.Models.AspNetUser>
+<h2>
+    Authorized Accounts
+</h2>
+@Html.ActionLink("Unauthorised Accounts", "UnauthedAccounts")
+<br>
+<br>
+<br>
+<table class="table">
+    <tr>
+        <th>
+            Email
+        </th>
+        <th>
+            Username
+        </th>
+        <th>
+            Status
+        </th>
+        <th>
+            Amount Payed
+        </th>
+        <th></th>
+    </tr>
+
+    @foreach (var item in Model)
+    {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.Email)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.UserName)
+        </td>
+        <td>
+            @{ try
+                {
+                    @Html.DisplayFor(modelItem => item.AspNetRoles.ToList()[0].Name)
+                }
+                catch (Exception)
+                {
+                    <p>Unauthorised</p>
+                }
+            }
+
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.TotalAmountPayed)
+        </td>
+    </tr>
+    }
+
+</table>
